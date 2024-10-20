@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger update
-        run: curl https://jenkins.qhy04.com/buildByToken/build?job=Update%20Hoyo-Card-Assets&token=NewPhotos&cause=git%20push
+        run: curl "https://jenkins.qhy04.com/buildByToken/build?job=Update%20Hoyo-Card-Assets&token=NewPhotos&cause=git%20push"
