@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger update
-        run: curl -GLi --data-urlencode 'job=Update Hoyo-Card-Assets&token=${{ secrets.BUILD_TOKEN }}&cause=git push' https://jenkins.qhy04.com/buildByToken/build
+        run: curl -Li https://jenkins.qhy04.com/buildByToken/build?job=Update%20Hoyo-Card-Assets&token=${{ secrets.BUILD_TOKEN }}&cause=git%20push
